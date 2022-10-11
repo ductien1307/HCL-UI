@@ -29,8 +29,8 @@ public class Login extends AbstractTest {
         loginPO.inputPassWord(passWord);
         loginPO.clickLogin();
         loginPO.clickYesButton();
-        sleep(5);
-        String titlePage = getTitlePage(driver);
+        //sleep(5);
+        //String titlePage = getTitlePage(driver);
         //verifyContains(titlePage, expect);
     }
 
