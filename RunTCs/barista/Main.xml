@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Amazon">
+
+    <parameter name="browser" value="chrome"/>
+    <parameter name="environment" value="stg"/>
+    <parameter name="headless" value="0"/>
+    <parameter name="grid" value="0"/>
+
+    <listeners>
+        <listener class-name="core.libs.ListenerTest"></listener>
+    </listeners>
+
+    <test name="Chrome">
+        <classes>
+            <class name="barista.testCases.Login">
+                <methods>
+                    <include name="validAccount"/>
+                </methods>
+            </class>
+            <class name="barista.testCases.OnlineOrdering.InFlightOrder">
+                <methods>
+                    <include name="inFlightOrderNew"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

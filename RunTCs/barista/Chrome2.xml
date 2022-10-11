@@ -1,0 +1,24 @@
+<suite name="Chrome">
+    <parameter name="browser" value="chrome"/>
+    <test name="Chrome">
+        <classes>
+            <class name="barista.testCases.Login">
+                <methods>
+                    <include name="validAccount"/>
+                </methods>
+            </class>
+
+            <!--<class name="barista.testCases.SearchResult">
+                <methods>
+                    <include name="searchItems"/>
+                </methods>
+            </class>
+
+            <class name="barista.testCases.OnlineOrdering.InFlightOrder">
+                <methods>
+                    <include name="verifyCart"/>
+                </methods>
+            </class>-->
+        </classes>
+    </test>
+</suite>
