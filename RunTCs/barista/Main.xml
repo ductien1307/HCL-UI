@@ -4,7 +4,7 @@
 
     <parameter name="browser" value="chrome"/>
     <parameter name="environment" value="stg"/>
-    <parameter name="headless" value="0"/>
+    <parameter name="headless" value="1"/>
     <parameter name="grid" value="0"/>
 
     <listeners>
@@ -18,11 +18,11 @@
                     <include name="validAccount"/>
                 </methods>
             </class>
-            <class name="barista.testCases.OnlineOrdering.InFlightOrder">
+            <!--<class name="barista.testCases.OnlineOrdering.InFlightOrder">
                 <methods>
                     <include name="inFlightOrderNew"/>
                 </methods>
-            </class>
+            </class>-->
         </classes>
     </test>
 
